@@ -33,7 +33,10 @@ if __name__ == '__main__':
     # df4 =ReadTrack('../Beijing/T_Drive/014')
     # df4.to_csv("../Beijing/T_Drive/Data/014.csv")
 
-
+    df1=pd.read_csv("../Beijing/T_Drive/Data/011.csv")
+    df2=pd.read_csv("../Beijing/T_Drive/Data/012.csv")
+    df3=pd.read_csv("../Beijing/T_Drive/Data/013.csv")
+    df4=pd.read_csv("../Beijing/T_Drive/Data/014.csv")
     df = pd.concat((df1,df2,df3,df4), ignore_index=True)
     df.plot.scatter(x="Lo",y="La")
     plt.show()
